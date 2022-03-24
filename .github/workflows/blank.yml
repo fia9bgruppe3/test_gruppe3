@@ -64,8 +64,8 @@ jobs:
         run: echo Testing the project…
   
   deploy:
-    if: ${{ always() && (needs.job1.result=='failure' || needs.job2.result=='failure') }}
-    needs: [job1, job2]
+    if: ${{ always() && (needs.build.result=='failure' || needs.test.result=='failure') }}
+    needs: [build, test]
     steps:
       # The type of runner that the job will run on
       runs-on: ubuntu-latest
