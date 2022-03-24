@@ -34,6 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      # Runs a single command using the runners shell
+      - name: Aufgabe 2.3 
+        run: echo „Building the project…“
+        
   # This workflow contains a single job called "build"
   test:
     # The type of runner that the job will run on
@@ -53,6 +58,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      # Runs a single command using the runners shell
+      - name: Aufgabe 2.3 
+        run: echo „Testing the project…“
+        
   # This workflow contains a single job called "build"
   deploy:
     # The type of runner that the job will run on
@@ -72,3 +82,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      # Runs a single command using the runners shell
+      - name: Aufgabe 2.3 
+        run: echo „Deploying the project…“
